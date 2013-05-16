@@ -1,11 +1,16 @@
 /* Media queries demo */
 
 #media-queries {
-	padding: 5%;
+	padding: 40px;
 }
 
 #media-queries h1 {
 	color: #fff;
+}
+
+#media-queries h2 {
+	color: rgba(255,255,255,0.5);
+	font-weight: normal;
 }
 
 @media screen and (max-width: 320px) {
@@ -15,8 +20,11 @@
 	}
 	
 	#media-queries h1:after {
-		content: "Mobile Landscape";
-		margin-left: 0.5em;
+		content: "Mobile Portrait";
+	}
+
+	#media-queries h2:after {
+		content: "up to 320px";
 	}
 }
 
@@ -27,8 +35,11 @@
 	}
 	
 	#media-queries h1:after {
-		content: "Mobile Portrait";
-		margin-left: 0.5em;
+		content: "Mobile Landscape";
+	}
+
+	#media-queries h2:after {
+		content: "321px - 568px";
 	}
 }
 
@@ -40,7 +51,10 @@
 	
 	#media-queries h1:after {
 		content: "Small Tablet";
-		margin-left: 0.5em;
+	}
+
+	#media-queries h2:after {
+		content: "569px - 767px";
 	}
 }
 
@@ -52,7 +66,10 @@
 	
 	#media-queries h1:after {
 		content: "Large Tablet";
-		margin-left: 0.5em;
+	}
+
+	#media-queries h2:after {
+		content: "768px - 1023px";
 	}
 }
 
@@ -64,6 +81,9 @@
 	
 	#media-queries h1:after {
 		content: "Full Size Display";
-		margin-left: 0.5em;
+	}
+	
+	#media-queries h2:after {
+		content: "1024px and up";
 	}
 }
