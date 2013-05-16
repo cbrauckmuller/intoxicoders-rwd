@@ -115,13 +115,13 @@ h1 {
 
 @media screen and (min-width: 768px) and (max-width: 999px) {
 	h1:after {
-		content: "Fluid";
+		content: "Fluid Grid";
 	}
 }
 
 @media screen and (min-width: 1000px) {
 	h1:after {
-		content: "Fixed";
+		content: "Fixed Grid";
 	}
 }
 
@@ -228,7 +228,7 @@ footer {
 }
 
 #toggle-grid-overlay {
-	position: absolute;
+	position: fixed;
 	bottom: 10px;
 	right: 10px;
 	z-index: 20;
