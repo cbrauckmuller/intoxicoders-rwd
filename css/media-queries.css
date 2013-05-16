@@ -1,65 +1,20 @@
-/* Responsive web design demo prepared by Chris Brauckmuller for Intoxicoders May 16, 2013 */
-
-* {
-	transition: 0.2s all;
-	box-sizing: border-box;
-}
-
-body {
-	color: #555;
-	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
-}
-
-.clearfix {
-  zoom: 1;
-}
-.clearfix:before, .clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-
-h1, h2, h3 {
-	margin-bottom: 14px;
-	color: #222;
-	font-weight: bold;
-	line-height: 1;
-}
-
-h1 {
-	font-size: 36px;
-}
-
-h2 {
-	font-size: 24px;
-}
-
-h3 {
-	font-size: 18px;
-}
-
-
 /* Media queries demo */
 
-#demo-media-queries {
+#media-queries {
 	padding: 5%;
 }
 
-#demo-media-queries h1 {
+#media-queries h1 {
 	color: #fff;
 }
 
 @media screen and (max-width: 320px) {
 
-	#demo-media-queries {
+	#media-queries {
 		background: red;
 	}
 	
-	#demo-media-queries h1:after {
+	#media-queries h1:after {
 		content: "Mobile Landscape";
 		margin-left: 0.5em;
 	}
@@ -67,11 +22,11 @@ h3 {
 
 @media screen and (min-width: 321px) and (max-width: 568px) {
 
-	#demo-media-queries {
+	#media-queries {
 		background: orange;
 	}
 	
-	#demo-media-queries h1:after {
+	#media-queries h1:after {
 		content: "Mobile Portrait";
 		margin-left: 0.5em;
 	}
@@ -79,11 +34,11 @@ h3 {
 
 @media screen and (min-width: 569px) and (max-width: 767px) {
 
-	#demo-media-queries {
+	#media-queries {
 		background: green;
 	}
 	
-	#demo-media-queries h1:after {
+	#media-queries h1:after {
 		content: "Small Tablet";
 		margin-left: 0.5em;
 	}
@@ -91,11 +46,11 @@ h3 {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
-	#demo-media-queries {
+	#media-queries {
 		background: blue;
 	}
 	
-	#demo-media-queries h1:after {
+	#media-queries h1:after {
 		content: "Large Tablet";
 		margin-left: 0.5em;
 	}
@@ -103,11 +58,11 @@ h3 {
 
 @media screen and (min-width: 1024px) {
 
-	#demo-media-queries {
+	#media-queries {
 		background: purple;
 	}
 	
-	#demo-media-queries h1:after {
+	#media-queries h1:after {
 		content: "Full Size Display";
 		margin-left: 0.5em;
 	}
